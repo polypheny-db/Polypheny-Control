@@ -123,7 +123,6 @@ public class PolyphenyDbProcessBuilder {
         command.addFirst( javaExecutable.getAbsolutePath() );
         command.addAll( Arrays.asList( javaOptions ) );
         if ( pdbmsJarFile != null && pdbmsJarFile.exists() ) {
-            command.add( "-jar" );
             command.add( pdbmsJarFile.getAbsolutePath() );
         } else {
             command.add( "-classpath" );
